@@ -1,0 +1,325 @@
+$mainHeader-space: 5px;
+$loginProfile-image-size: 50px;
+$menuHeader-item-size: 35px;
+$menuHeader-item-activeColor: $theme-color-themeColor2;
+
+/*
+ * Theme Colors
+ */
+$theme-color-themeColor1: #5fbd8f;
+$theme-color-themeColor2: #1eb4d1;
+$theme-color-themeColor3: #2d2a26;
+$theme-color-themeColor4: #76777a;
+
+/*
+  * System Colors
+  */
+$system-color-blue: #2d84e2;
+$system-color-dark: #282c34;
+$system-color-gray: #6e7780;
+$system-color-green: #29b568;
+$system-color-light: #f9f9f9;
+$system-color-red: #db4646;
+$system-color-yellow: #fbc139;
+$system-color-orange: #f79a4a;
+$system-color-white: #fff;
+/*
+  * Component Colors
+  */
+$component-color-container: #ededed;
+$component-color-iconDefault: #656565;
+$component-color-titleInput: #696969;
+$component-color-textColor: #3e3e3e;
+$component-color-textColorHover: $system-color-light;
+$component-color-lineColor: #d6d6d6;
+$component-color-bgModal: #759583;
+$component-color-titleColor: #1f965c;
+$component-color-link: $theme-color-themeColor1;
+$component-color-tag: #e8e8e8;
+
+/*
+  * #root #wrapper ::after ::before Colors
+  */
+$component-color-linear1: $theme-color-themeColor1;
+$component-color-linear2: $theme-color-themeColor2;
+$component-color-linear3: $theme-color-themeColor2;
+
+/*
+  * Theme
+  */
+$priority-color-high: $system-color-red;
+$priority-color-medium: $system-color-yellow;
+$priority-color-low: $system-color-green;
+
+/*
+  * link
+  */
+$link-edit-color: $theme-color-themeColor2;
+$link-delete-color: $component-color-titleInput;
+$link-addMore-color: $theme-color-themeColor1;
+
+/*
+  * Main Menu
+  */
+$mainMenu-bgColor: #f4f7f6;
+
+/*
+  * Triage Level
+  */
+$triageItem-resuscitation: #db4646;
+$triageItem-emergency: #f79a4a;
+$triageItem-urgency: #fbc139;
+$triageItem-lessUrgency: #29b568;
+$triageItem-nonUrgency: #24b1cb;
+
+/*
+ * Input
+ */
+$button-bg-color: #ededed;
+$buttons-active-bg-color: $theme-color-themeColor1;
+$input-padding: 5px;
+$button-radius: 3px;
+
+/*
+ * Input
+ */
+$input-height: 35px;
+$input-padding: 5px;
+$input-radius: 4px;
+$input-border-style: 1px solid rgba(#000, 0.2);
+$input-focus-border-style: 1px solid rgba($theme-color-themeColor1, 0.8);
+$input-focus-shadow-color: rgba($theme-color-themeColor1, 0.4);
+$input-label-required-width: 15px;
+
+$radioCheckbox-size: 25px;
+$radioCheckbox-active-color: $theme-color-themeColor1;
+
+// template
+$main-space: 10px;
+$wrapper-size: 5px;
+$main-radius: 2px;
+
+// text
+$main-fontName: Roboto;
+$main-fontRootSize: 14px;
+$main-fontIcon-size: 22px;
+$main-fontIcon-mini: 16px;
+$font-title: 18px;
+$font-sub-title: 16px;
+$font-detail: $main-fontRootSize;
+$font-mini: 12px;
+$font-superMini: 10px;
+$width-menu-nav: 155px;
+$wrapper-size: 5px;
+
+//card
+$card-border-radius: $main-radius;
+$card-border: none;
+$card-bg-color: $system-color-white;
+$card-boxShadow-style: 0px 0px 2px rgba(#000, 0.2);
+
+$cardList-item-bg-color: #fbfbfb;
+$cardList-border-radius: $card-border-radius;
+
+//cardInfo
+$cardInfo-bg-color: #fbfbfb;
+$cardInfo-border-radius: $card-border-radius;
+$cardInfo-border-style: 1px solid rgba(#000, 0.15);
+$cardInfo-boxShadow-style: 0px 0px 2px 0px rgba(#000, 0.08);
+
+$border-button-group: 1px solid rgba(34, 36, 38, 0.15);
+
+// userProfileImage
+$userProfileImage-emrList-size: 50px;
+$userProfileImage-patientInfo-size: 110px;
+
+.rightlabel {
+  text-align: right;
+}
+
+.rowContent {
+  &.appointmentList {
+    flex-basis: 30% !important;
+    min-width: 300px;
+
+    .appointment-title {
+      display: flex;
+      flex: 1;
+    }
+
+    .ui.form {
+      display: flex;
+      flex: 1 1;
+
+      .input {
+        width: 100%;
+
+        .multi-select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.columnContent {
+  > .rowContent {
+    &.appointmentListContainer,
+    &.appointmentShowContainer {
+      > .card {
+        height: 100%;
+      }
+    }
+
+    &.appointmentListContainer {
+      width: 250px;
+      flex: initial;
+
+      .listContent {
+        flex: 1;
+        // overflow: auto;
+        // max-height: calc(100vh - 262px)
+      }
+
+      .btnControl {
+        .ui.button {
+          width: 100%;
+        }
+      }
+    }
+
+    &.appointmentShowContainer {
+    }
+  }
+}
+
+.appointmentListItem {
+  line-height: normal;
+
+  &-dateTime {
+    font-weight: bold;
+  }
+
+  &-status {
+  }
+
+  &-doctorName {
+    font-size: $font-mini;
+    color: $component-color-titleInput;
+  }
+}
+
+.appointmentFormContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &-input {
+    flex: 1;
+    max-width: 500px;
+
+    .field {
+      &.dateInput,
+      &.timeInput {
+        width: 150px;
+      }
+
+      &.dateInput {
+      }
+
+      &.timeInput {
+      }
+
+      &.statusInput {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.appointmentInfoViewContent {
+  .appointmentStatus,
+  .appointmentDoctorName,
+  .appointmentSubject,
+  .appointmentDescription {
+    .infoViewBlock-label {
+      min-width: 101px;
+    }
+  }
+
+  .appointmentDescription {
+  }
+}
+
+.rowContent {
+  &.appointmentList {
+    flex-basis: 30% !important;
+    min-width: 300px;
+
+    .appointment-title {
+      display: flex;
+      flex: 1;
+    }
+
+    .ui.form {
+      display: flex;
+      flex: 1 1;
+
+      .input {
+        width: 100%;
+
+        .multi-select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+
+  .appointment-card {
+    .patient {
+      display: flex;
+      flex: 1;
+      padding: 5px $main-space;
+
+      .profile {
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        .profileDetail {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+
+          span {
+            width: 100%;
+
+            &:first-child {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .description {
+      padding: 5px 10px;
+      word-break: break-all;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.searchItemList {
+  flex: 1;
+  min-width: 500px;
+  height: 500px;
+}
